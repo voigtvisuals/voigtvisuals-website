@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
 }
 
 body {
@@ -134,6 +133,29 @@ header {
     background-color: #ffffff;
 }
 
+.button {
+    top: 40vh;
+    position: absolute;
+    width: 160px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.button a {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 25px;
+    
+}
 
 @media screen and (max-width: 800px) {
     .text1 {
@@ -147,6 +169,16 @@ header {
     .text1-1 {
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    .mainImage {
+        width: 250%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .mainImage {
+        width: 150%;
     }
 }
 
@@ -164,6 +196,28 @@ header {
     text-align: center;
     font-size: 3rem;
     transition: .3s ease;
+}
+
+.osm-nav-links {
+    list-style: none;
+}
+
+.osm-nav-links li{
+    padding: 50px 20px;
+}
+
+.osm-nav-links li a {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    text-decoration: none;
+    color: #000;
+    transition: text-decoration 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.osm-nav-links li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .off-screen-menu.active {
@@ -221,10 +275,21 @@ header {
     .navbar {
         display: none;
     }
+
+    .button {
+        top: 25vh;
+    }
 }
 
 @media screen and (min-width: 800px) {
     .ham-menu {
         display: none;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .mainImage {
+        width: 250%;
     }
 }
