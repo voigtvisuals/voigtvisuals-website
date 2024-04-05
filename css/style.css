@@ -292,5 +292,6 @@ header {
 @media screen and (max-width: 450px) {
     .mainImage {
         width: 250%;
+        overflow-x: hidden;
     }
 }
