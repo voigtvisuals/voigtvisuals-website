@@ -74,6 +74,10 @@ header {
     margin-left: 9.5%;
 }
 
+.parent {
+    overflow-x: hidden;
+}
+
 #parent {
     position: relative;
 }
