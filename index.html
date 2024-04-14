@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>voigtvisuals</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/app.js"></script>
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo" alt="logo">voigtvisuals</a>
+        <a href="index.html" class="logo hidden" alt="logo">voigtvisuals</a>
      
         <nav>
-            <div class="ham-menu">
+            <div class="ham-menu hidden">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -20,29 +21,76 @@
 
         <div class="off-screen-menu">
             <ul class="osm-nav-links">
-                <li><a href="portfolio.html">Arbeit</a></li>
-                <li><a href="Kontakt.html">Kontakt</a></li>
-                <li><a href="Das-team.html">Das Team</a></li>
+                <li><a href="portfolio.html" class="hidden">Arbeit</a></li>
+                <li><a href="Kontakt.html" class="hidden">Kontakt</a></li>
+                <li><a href="Das-team.html" class="hidden">Das Team</a></li>
             </ul>
         </div>
 
         <nav class="navbar">
             <ul class="nav-links">
-                <li class="navbar-list current-page"><a href="Arbeit.html">Arbeit</a></li>
-                <li class="navbar-list"><a href="">Kontakt</a></li>
-                <li class="navbar-list"><a href="">Das Team</a></li>
+                <li class="navbar-list current-page hidden"><a href="Arbeit.html">Arbeit</a></li>
+                <li class="navbar-list hidden"><a href="">Kontakt</a></li>
+                <li class="navbar-list hidden"><a href="">Das Team</a></li>
             </ul>
         </nav>
     </header>
 
-    <p class="heading-1">Videoproduktion mit Emotionen.</p>
+    <p class="heading-1 hidden">Videoproduktion mit Emotionen.</p>
     
     <div class="container-1">
         <img src="img/wellen-1.jpg" alt="showreel">
     </div>
 
-    <div class="portfolio-button">
+    <div class="portfolio-button hidden">
         <a href="portfolio.html">zum Portfolio</a>
+    </div>
+
+
+  <div class="project-gallery">
+    <p class="heading-2 hidden">Aktuelle Projekte</p>
+        <div class="container-2">
+          <div class="item hidden" id="1">
+            <img src="img/ritterhudebadgers-thumbnail.jpeg" alt="">
+            <div class="text">
+              <p class="project-heading">Ritterhude Badgers</p>
+              <p>Hype-, Werbe- und Aftermovieprojekte</p>
+            </div>
+            <a href="/projects/badgers.html" class="button">Mehr erfahren</a>
+          </div>
+    
+          <div class="item hidden" id="2">
+            <img src="img/bfc-thumbnail.jpg" alt="">
+            <div class="text">
+              <p class="project-heading">BFC</p>
+              <p>Atemberaubende Aftermovies von Meisterschaften</p>
+            </div>
+            <a href="/projects/project-1-html" class="button">Mehr erfahren</a>
+          </div>
+    
+          <div class="item hidden" id="3">
+            <img src="img/burger-thumbnail.jpg" alt="">
+            <div class="text">
+                <p class="project-heading">Werbespot</p>
+              <p>Werbespots für Restaurants</p>
+              </div>
+              <a href="/projects/project-1-html" class="button">Mehr erfahren</a>
+          </div>
+    
+          <div class="item hidden" id="4">
+            <img src="img/doku-thumbnail.jpg" alt="">
+            <div class="text">
+                <p class="project-heading">Ritterhude Badgers - Doku</p>
+              <p>Doku über Schmerzen im Sport</p>
+            </div>
+            <a href="/projects/project-1-html" class="button">Mehr erfahren</a>
+          </div>
+    
+          
+      </div>
+    
+      <!-- Modal -->
+      
     </div>
 
 
@@ -50,6 +98,5 @@
 
     </footer>
     
-    <script src="js/app.js"></script>
 </body>
 </html>
